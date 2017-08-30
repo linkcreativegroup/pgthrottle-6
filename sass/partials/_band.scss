@@ -1,0 +1,133 @@
+
+
+
+
+
+.mobile .navbar-toggle {
+    display: block;
+}
+
+
+nav >.container {
+	padding:0;
+}
+
+.navbar-toggle {
+	margin-right:0 !important;
+}
+
+
+.navbar-header {
+    float: right;
+}
+.navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 11px 9px;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    background-color: transparent;
+    background-image: none;
+    border: 2px solid $color-secondary;
+    border-radius: 1px;
+}
+
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    color: $color-secondary;
+    background: $color-secondary;
+}
+
+.navbar {
+	float:right;
+}
+
+.collapse.in {
+    display: block !important;
+
+}
+
+.navbar-nav {
+    float: none;
+    margin: 0;
+    position: absolute;
+    top: 53px;
+    background: darken($color-dark, 10%);
+    padding: 0;
+    right: 15px;
+    border-radius: 0 0px 4px 4px;
+    box-shadow: 0px 0px 2px $color-primary;
+}
+
+.nav  { 
+	> li > a {
+    position: relative;
+    display: block;
+    padding: 20px 20px !important;
+    border-left: 1px solid $color-dark;
+    border-right: 1px solid #111;
+	-moz-transition:700ms ease;
+	-webkit-transition:700ms ease;
+	-o-transition:700ms ease;
+	transition:700ms ease;
+	&:hover {
+		background:$color-accent;
+	}
+	}
+	>li.active > a {
+		background:$color-accent;
+	}
+}
+
+.nav > li {
+	&:first-child a {
+		border-left:0;
+	}
+	&:last-child a {
+		border-right:0;
+	}
+}
+
+.navbar-header {
+ .menu-text {
+		font-size:20px;
+		line-height: 52px;
+		margin-right:10px;
+	
+	 -moz-transition:700ms ease;
+	-webkit-transition:700ms ease;
+	-o-transition:700ms ease;
+	transition:700ms ease;
+}
+}
+
+header {
+	.navbar-header {
+	opacity: 0.4;
+	-moz-transition:700ms ease;
+	-webkit-transition:700ms ease;
+	-o-transition:700ms ease;
+	transition:700ms ease;
+	
+}
+	&:hover .navbar-header {
+		opacity: 1;
+		
+	}
+}
+
+@media (min-width: 768px) {
+
+.collapse {
+    display: none !important;
+    height: auto !important;
+    padding-bottom: 0;
+    overflow: visible !important;
+	transition:500ms ease;
+	transform:500ms ease; 
+}
+}
